@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css"
+import Editor from "./components/Editor";
+import Preview from "./components/Preview";
+import defaultMarkdown from "./assets/defaultMarkdown.txt";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [userInput, setMarkdown] = useState("");
+
+  //Sets default markdown to show at first load
+  useEffect(() => {
+    fetch(defaultMarkdown).then(res => res.text()).then(text => setMarkdown(text))
+  }, []);
+
+  //Handles when user enters text
+  const handleChange = e => {
+    setMarkdown(e.target.value);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="row">
+        <div className="editor-container col">
+          <Editor 
+            defaultValue={userInput} 
+            handleChange={handleChange}/>
+        </div>
+        <div className="preview-container col">
+          <Preview 
+            input={userInput}/>
+        </div>
+      </div>
     </div>
   );
 }

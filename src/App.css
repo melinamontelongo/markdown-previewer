@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&family=VT323&family=Cutive+Mono&display=swap');
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #232526 #6d6f74 rgb(206, 206, 206);
+}
+*::-webkit-scrollbar {
+  width: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*::-webkit-scrollbar-track {
+  background: #232526;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*::-webkit-scrollbar-thumb {
+
+  background: #6d6f74;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+*::-webkit-scrollbar-thumb:hover {
+  background: #737579;
+}
+
+.App{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: #00bf8f;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.preview-container{
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.editor-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

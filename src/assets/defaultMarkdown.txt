@@ -1,0 +1,70 @@
+# Welcome to Markdown Previewer!
+
+Built in React, using [Marked](https://github.com/markedjs/marked) and [Highlight](https://github.com/highlightjs/highlight.js/), it converts **Markdown** into **HTML** and previews it.
+
+### How to use
+
+Just type your Markdown on the left and it will be displayed here!
+
+### Here's some Markdown examples:
+
+##### Headers
+
+You can write _different level headers_
+
+# h1
+
+###### h6
+
+
+##### Code
+
+You can write _inline code:_ `<div></div>`
+
+Or a _code block_:
+```
+// this is a code block:
+function anotherExample(firstLine, lastLine) {
+  if (firstLine == '```' && lastLine == '```') {
+    return multiLineCode;
+  }
+}
+```
+
+##### Emphasis
+
+You can make text **bold**
+Or _italic_.
+Or... **_both_**
+And you can even ~~cross it out~~.
+
+##### Links
+
+This is a [link](https://reactjs.org/)
+
+##### Blockquotes
+
+> This is a blockquote
+
+##### Tables
+
+Table header | Table header | Table header
+------------ | ------------- | -------------
+Table data | Table data | Table data
+Table data | Table data | Table data
+
+##### Lists
+
+- This is an unordered list.
+  - It can be bulleted.
+     - And have different indentation levels.
+
+
+1. This is an ordered list.
+1. You can use any number!
+
+##### Images
+
+You can also add embedded images:
+
+![React Logo](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg)
