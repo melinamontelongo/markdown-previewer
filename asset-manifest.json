@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/markdown-previewer/static/css/main.d30a8e90.css",
+    "main.js": "/markdown-previewer/static/js/main.f36c787f.js",
+    "static/media/Perfect DOS VGA 437.ttf": "/markdown-previewer/static/media/Perfect DOS VGA 437.4df1d5bd795358c80faa.ttf",
+    "static/media/defaultMarkdown.txt": "/markdown-previewer/static/media/defaultMarkdown.094d063bd28d5c2d695e.txt",
+    "index.html": "/markdown-previewer/index.html",
+    "main.d30a8e90.css.map": "/markdown-previewer/static/css/main.d30a8e90.css.map",
+    "main.f36c787f.js.map": "/markdown-previewer/static/js/main.f36c787f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d30a8e90.css",
+    "static/js/main.f36c787f.js"
+  ]
+}
